@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Como você está hoje?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Como você está se sentindo hoje?</h1>
+
+<form method="POST">
+    <button name="sentimento" value="feliz">😊 Feliz</button>
+    <button name="sentimento" value="triste">😔 Triste</button>
+</form>
+
+{% if resposta %}
+    <div class="resposta">
+        <p><strong>{{ resposta.mensagem }}</strong></p>
+        <p>{{ resposta.sugestao }}</p>
+
+        {% if resposta.versiculo %}
+            <p class="versiculo">📖 {{ resposta.versiculo }}</p>
+        {% endif %}
+    </div>
+{% endif %}
+
+</body>
+</html>
