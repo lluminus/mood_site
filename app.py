@@ -1,4 +1,9 @@
 # app.py
+import micropip
+await micropip.install('flask')
+import flask
+
+# Seu código do Flask aqui...
 
 from flask import Flask, render_template, request
 from core.service import get_resposta
@@ -19,3 +24,4 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+    
