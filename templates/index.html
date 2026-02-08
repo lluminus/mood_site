@@ -1,20 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
 <div class="container">
-    <h1>Como você está?</h1>
-    
-    <form method="POST" class="buttons-grid">
-        <button name="sentimento" value="feliz">😊 Feliz</button>
-        <button name="sentimento" value="cansado">😴 Cansado</button>
-        <button name="sentimento" value="ansioso">😟 Ansioso</button>
-        <button name="sentimento" value="grato">🙏 Grato</button>
+    <h1>Como você está agora?</h1>
+
+    <form method="POST" class="grid-botoes">
+        <button name="sentimento" value="feliz"><span>😊</span> Feliz</button>
+        <button name="sentimento" value="triste"><span>😔</span> Triste</button>
+        <button name="sentimento" value="cansado"><span>😴</span> Cansado</button>
+        <button name="sentimento" value="ansioso"><span>😟</span> Ansioso</button>
     </form>
 
-    {% if resposta %}
-        <div class="resposta-card">
+    <div class="result-area">
+        {% if resposta %}
             <p><strong>{{ resposta.mensagem }}</strong></p>
-            <p>💡 <em>{{ resposta.sugestao }}</em></p>
+            <p style="font-size: 0.85rem;">{{ resposta.sugestao }}</p>
             {% if resposta.versiculo %}
                 <p class="versiculo">📖 {{ resposta.versiculo }}</p>
             {% endif %}
-        </div>
-    {% endif %}
+        {% else %}
+            <p style="color: #999; font-size: 0.9rem;">Escolha um sentimento para refletir.</p>
+        {% endif %}
+    </div>
 </div>
+
+</body>
+</html>
