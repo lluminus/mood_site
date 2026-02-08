@@ -1,8 +1,4 @@
 # app.py
-import micropip
-await micropip.install('flask')
-import flask
-
 # Seu código do Flask aqui...
 
 from flask import Flask, render_template, request
