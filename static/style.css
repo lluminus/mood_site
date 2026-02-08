@@ -79,3 +79,14 @@ button:active {
     color: #666;
     margin-top: 10px;
 }
+/* Cores suaves ao passar o mouse ou clicar */
+button[value="feliz"]:active, button[value="feliz"]:hover { color: #28a745; }
+button[value="triste"]:active, button[value="triste"]:hover { color: #17a2b8; }
+button[value="cansado"]:active, button[value="cansado"]:hover { color: #ffc107; }
+button[value="ansioso"]:active, button[value="ansioso"]:hover { color: #dc3545; }
+
+/* Ajuste para os emojis ficarem maiores */
+button span {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
