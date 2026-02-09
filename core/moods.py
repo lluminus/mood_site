@@ -7,18 +7,18 @@ sentimentos = {
         "versiculo": "Fp 4:4"
     },
     "triste": {
-        "mensagens": ["Eu sei que não é um dia fácil, mas você não está sozinho."],
+        "mensagens": ["Eu sei que não é um dia fácil, mas você não está sozinha."],
         "sugestao": "Se permita descansar e falar com alguém de confiança.",
         "versiculo": "Sl 34:18"
     },
     "cansado": {
-        "mensagens": ["O trabalho no lava-jato foi puxado? Hora de recarregar!"],
+        "mensagens": ["O dia foi puxado? Hora de recarregar!"],
         "sugestao": "Tome um banho relaxante e desligue o celular por 20 min.",
         "versiculo": "Mt 11:28"
     },
     "ansioso": {
         "mensagens": ["Respire fundo. O amanhã cuidará de si mesmo."],
-        "sugestao": "Foque no que você pode controlar agora.",
+        "sugestao": "Foque no que você pode controlar agora, te amo.",
         "versiculo": "Mt 6:34"
     }
 }
