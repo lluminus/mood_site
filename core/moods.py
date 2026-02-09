@@ -11,12 +11,12 @@ sentimentos = {
         "sugestao": "Se permita descansar e falar com alguém de confiança.",
         "versiculo": "Sl 34:18"
     },
-    "cansado": {
+    "cansada": {
         "mensagens": ["O dia foi puxado? Hora de recarregar!"],
         "sugestao": "Tome um banho relaxante e desligue o celular por 20 min.",
         "versiculo": "Mt 11:28"
     },
-    "ansioso": {
+    "ansiosa": {
         "mensagens": ["Respire fundo. O amanhã cuidará de si mesmo."],
         "sugestao": "Foque no que você pode controlar agora, te amo.",
         "versiculo": "Mt 6:34"
